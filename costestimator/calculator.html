@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>calculation </title>
+  <link rel="stylesheet" href="cal.css">
+  <script src="cal.js"></script>
+  <style type="text/css">
+    body {
+      margin: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="grid-item">
+      <h1> Machine cost</h1>
+      <form>
+        <table style="width:100%">
+          <tr>
+            <td>Cost of machine :</td>
+            <td><input type="text" id="cost_machine" /></td>
+          </tr>
+          </tr>
+          <td>NO. of days of work:</td>
+          <td><input type="text" id="no_machine" /></td>
+          </tr>
+          <tr>
+            <td>Work hours per day :</td>
+            <td><input type="text" id="work_machine" /></td>
+          </tr>
+          <tr>
+            <td>life of machine:</td>
+            <td> <input type="text" id="life_machine" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="button" onClick="machinecost()" Value="Machine Cost" class="buttonclass" /></td>
+          </tr>
+        </table>
+
+      </form>
+      <p>Machine Cost of per hour is : <br>
+        <span id="result_machine"></span>
+      </p>
+    </div>
+
+
+    <div class="grid-item">
+      <h1> Man cost</h1>
+      <table style="width:100%">
+        <tr>
+          <td>Salary of worker :</td>
+          <td><input type="text" id="salary_man" /></td>
+        </tr>
+        <tr>
+          <td>No. of days:</td>
+          <td><input type="text" id="no_man" /></td>
+        </tr>
+        <tr>
+          <td>Hours per day :</td>
+          <td><input type="text" id="hours_man" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="button" onClick="mancost()" Value="Man Cost" class="buttonclass" /></td>
+        </tr>
+      </table>
+      <p>Per hour cost : <br>
+        <span id="result_man"></span>
+      </p>
+    </div>
+
+
+    <div class="grid-item">
+      <h1> Power cost</h1>
+      <table style="width:100%">
+        <tr>
+          <td>Standard factor :</td>
+          <td><input type="text" id="standard_power" /></td>
+        </tr>
+        <tr>
+          <td>kw of machine:</td>
+          <td><input type="text" id="kw_power" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="button" onClick="powercost()" Value="Power Cost" class="buttonclass" /></td>
+        </tr>
+      </table>
+      <p>Power cost per hour : <br>
+        <span id="result_power"></span>
+      </p>
+    </div>
+
+
+    <div class="grid-item">
+      <h1> Material cost</h1>
+      <table style="width:100%">
+        <tr>
+          <td>Total Material cost :</td>
+          <td><input type="text" id="total_material" /></td>
+        </tr>
+        <tr>
+          <td>Requested quantity: </td>
+          <td><input type="text" id="requested_material" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="button" onClick="materialcost()" Value="Material Cost" class="buttonclass" /></td>
+        </tr>
+      </table>
+      <p>Per sheet cost : <br>
+        <span id="result_material"></span>
+      </p>
+    </div>
+
+    <div class="grid-item">
+      <h1>Running cost</h1>
+      <form>
+        <input type="button" onClick="runningcost()" Value="Running Cost" class="buttonclass" />
+      </form>
+      <p>Per book cost : <br>
+        <span id="result_running"></span>
+      </p>
+    </div>
+
+
+    <div class="grid-item">
+      <h1>Total running Cost</h1>
+      <table>
+        <tr>
+          <td>Quanitity Requested:</td>
+          <td><input type="text" id="quantity_total" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="button" onClick="totalcost()" Value="Total Cost" class="buttonclass" /></td>
+        </tr>
+      </table>
+      <p>Total production cost : <br>
+        <span id="result_total"></span>
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>

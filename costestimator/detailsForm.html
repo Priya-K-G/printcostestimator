@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Form Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-bottom: 16px;
+    }
+
+    input[type="date"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-bottom: 16px;
+    }
+
+    input[type="submit"],
+    input[type="file"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover,
+    input[type="file"]:hover {
+      background-color: #45a049;
+    }
+
+    input[type="file"] {
+      margin-top: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1> Invoice Form</h1>
+  <form action="3mp.html">
+    <label for="job-no">Job No:</label>
+    <input type="text" id="job-no" name="job-no" required>
+
+    <label for="customer-name">Customer Name:</label>
+    <input type="text" id="customer-name" name="customer-name" required>
+
+    <label for="customer-address">Customer Delivery Address:</label>
+    <input type="text" id="customer-address" name="customer-address" required>
+
+    <label for="Product-Name">Product Name:</label>
+    <input type="text" id="Product-Name" name="Product-Name" required>
+
+    <label for="order-qty">Actual Order Qty:</label>
+    <input type="text" id="order-qty" name="order-qty" required>
+
+    <label for="product-family">Product Family:</label>
+    <select id="product-family" name="product-family" required>
+      <option value="">--Select Product Family--</option>
+      <option value="Product A">Product A</option>
+      <option value="Product B">Product B</option>
+      <option value="Product C">Product C</option>
+    </select>
+
+    <label for="delivery-date">Planned Delivery Date:</label>
+    <input type="date" id="delivery-date" name="delivery-date" required>
+
+    <label for="delivery-mode">Mode of Delivery:</label>
+    <select id="delivery-mode" name="delivery-mode" required>
+      <option value="">--Select Delivery Mode--</option>
+      <option value="Courier">Courier</option>
+      <option value="Truck">Truck</option>
+      <option value="Air Freight">Air Freight</option>
+    </select>
+    <input type="submit" value="Upload">
+  </form>
+</body>
+
+</html>
